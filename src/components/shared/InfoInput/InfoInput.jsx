@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function InfoInput({
-    attr: { type, placeHolder, pattern, label, required },
+    attr: { type, placeHolder, pattern, label, required, minlength, maxlength },
 }) {
     if (required) {
         return (
@@ -11,6 +11,8 @@ export default function InfoInput({
                     type={type}
                     placeholder={placeHolder}
                     pattern={pattern}
+                    minLength={minlength}
+                    maxLength={maxlength}
                     required
                 />
             </label>
@@ -23,6 +25,8 @@ export default function InfoInput({
                     type={type}
                     placeholder={placeHolder}
                     pattern={pattern}
+                    minLength={minlength}
+                    maxLength={maxlength}
                 />
             </label>
         );

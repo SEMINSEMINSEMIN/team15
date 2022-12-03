@@ -12,6 +12,9 @@ export default function ProfileSetInpsTemp({ formId }) {
                     type: "text",
                     label: "사용자 이름",
                     placeHolder: "2~10자 이내여야 합니다.",
+                    minlength: "2",
+                    maxlength: "10",
+                    pattern: "[a-zA-Zㄱ-힣 ]{2,10}",
                     required: true,
                 }}
             />
@@ -21,6 +24,7 @@ export default function ProfileSetInpsTemp({ formId }) {
                     label: "계정 ID",
                     placeHolder:
                         "영문, 숫자, 특수문자(.),(_)만 사용 가능합니다.",
+                    pattern: "[a-zA-Z0-9._]+",
                     required: true,
                 }}
             />
