@@ -1,6 +1,5 @@
 import React, {useRef} from "react";
 
-// https://developer-talk.tistory.com/330
 export default function ProfileImageSet() {
     const image = useRef(null);
 
