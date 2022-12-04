@@ -1,13 +1,13 @@
 import React from "react";
 import ProfileImageSet from "../shared/ProfileImageSet/ProfileImageSet";
-import InfoInput from "../shared/InfoInput/InfoInput";
-import Warning from "../shared/Warning/Warning";
+import InputAndWarn from "../InputAndWarn/InputAndWarn";
+import "./profileSetInpsTemp.css"
 
 export default function ProfileSetInpsTemp({ formId }) {
     return (
         <form id={formId}>
             <ProfileImageSet />
-            <InfoInput
+            <InputAndWarn
                 attr={{
                     type: "text",
                     label: "사용자 이름",
@@ -16,9 +16,10 @@ export default function ProfileSetInpsTemp({ formId }) {
                     maxlength: "10",
                     pattern: "[a-zA-Zㄱ-힣 ]{2,10}",
                     required: true,
+                    message: "경고"
                 }}
             />
-            <InfoInput
+            <InputAndWarn
                 attr={{
                     type: "text",
                     label: "계정 ID",
@@ -26,13 +27,10 @@ export default function ProfileSetInpsTemp({ formId }) {
                         "영문, 숫자, 특수문자(.),(_)만 사용 가능합니다.",
                     pattern: "[a-zA-Z0-9._]+",
                     required: true,
+                    message: "경고"
                 }}
             />
-            <Warning
-                message={"영문, 숫자, 밑줄 및 마침표만 사용할 수 있습니다."}
-            />
-            {/* 소개의 경우 required를 넣어야 할까 빼야 할까 */}
-            <InfoInput
+            <InputAndWarn
                 attr={{
                     type: "text",
                     label: "소개",
