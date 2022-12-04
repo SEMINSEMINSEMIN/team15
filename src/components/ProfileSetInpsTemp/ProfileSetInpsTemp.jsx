@@ -27,7 +27,7 @@ export default function ProfileSetInpsTemp({ formId }) {
                         "영문, 숫자, 특수문자(.),(_)만 사용 가능합니다.",
                     pattern: "[a-zA-Z0-9._]+",
                     required: true,
-                    message: "경고"
+                    message: "영문, 숫자, 밑줄 및 마침표만 사용할 수 있습니다."
                 }}
             />
             <InputAndWarn
@@ -38,5 +38,5 @@ export default function ProfileSetInpsTemp({ formId }) {
                 }}
             />
         </form>
-    );
+    )
 }
