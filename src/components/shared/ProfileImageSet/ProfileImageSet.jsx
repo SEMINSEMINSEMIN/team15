@@ -4,7 +4,6 @@ export default function ProfileImageSet() {
     const image = useRef(null);
 
     const handleFiles = (e) => {
-        console.log(e.target.files);
         const selectedFile = [...e.target.files];
         const fileReader = new FileReader();
 
