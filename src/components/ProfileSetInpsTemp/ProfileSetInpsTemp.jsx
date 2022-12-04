@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileImageSet from "../shared/ProfileImageSet/ProfileImageSet";
-import InputAndWarn from "../InputAndWarn/InputAndWarn";
+import InputAndWarn from "../shared/InfoInput/InfoInput";
 import Warning from "../shared/Warning/Warning";
 import "./profileSetInpsTemp.css"
 import { useState } from "react";
