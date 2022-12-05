@@ -1,4 +1,6 @@
+import ProfileSetSignUp from "./pages/ProfileSetSignUp/ProfileSetSignUp";
+
 function App() {
-    return <div>hello world</div>;
+    return <ProfileSetSignUp />;
 }
 export default App;
