@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function InputAndWarn({
+export default function InfoInput({
     type,
     placeHolder,
     pattern,
@@ -9,6 +9,7 @@ export default function InputAndWarn({
     minlength,
     maxlength,
     onBlur,
+    onChange,
 }) {
     let inpEl = (
         <input
@@ -18,6 +19,7 @@ export default function InputAndWarn({
             minLength={minlength}
             maxLength={maxlength}
             onBlur={onBlur}
+            onChange={onChange}
             onFocus={(e) => {
                 e.target.style.backgroundColor = "red";
             }}
@@ -33,6 +35,7 @@ export default function InputAndWarn({
                 minLength={minlength}
                 maxLength={maxlength}
                 onBlur={onBlur}
+                onChange={onChange}
                 onFocus={(e) => {
                     e.target.style.backgroundColor = "red";
                 }}
